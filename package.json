@@ -1,0 +1,18 @@
+{
+  "name": "bst",
+  "version": "1.0.0",
+  "description": "binary search tree implemented in coffeescript",
+  "author": "javier soto",
+  "license": "ISC",
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "grunt": "*",
+    "grunt-mocha-test": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-watch": "*"
+  }
+}
