@@ -62,5 +62,22 @@ describe('BST', function() {
     bt.contains(7).should.equal(true);
     bt.contains(8).should.equal(false);
   });
+
+  it('deep search in pre order', function(){
+    bt.search_by_depth('pre').should.eql([5, 4, 2, 1, 3, 6, 7]);
+  });
+
+  it('deep search in order', function(){
+    bt.search_by_depth('in').should.eql([1, 2, 3, 4, 5, 6, 7]);
+  });
+
+  it('deep search post order', function(){
+    bt.search_by_depth('post').should.eql([1, 3, 2, 4, 7, 6, 5]);
+  });
+
+  it('breadth first search', function(){
+    bt.breadth_first_search().should.eql([5, 4, 6, 2, 7, 1, 3]);
+  });
+
 });
 
