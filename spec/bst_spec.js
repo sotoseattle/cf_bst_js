@@ -2,7 +2,7 @@ var should = chai.should();
 
 describe('BST', function() {
   it('create an empty tree', function() {
-    var bt = new BST(5);
+    var bt = new Root(5);
     bt.val.should.equal(5);
     bt.size().should.equal(1);
     should.equal(bt.left, null);
@@ -11,7 +11,7 @@ describe('BST', function() {
   });
 
   it('insert in a tree', function(){
-    var bt = new BST(5);
+    var bt = new Root(5);
     bt.insert(4);
     bt.val.should.equal(5);
     bt.left.val.should.equal(4);
@@ -23,8 +23,8 @@ describe('BST', function() {
     bt.depth().should.equal(2);
   });
 
-  it('seach the tree', function(){
-    bt = new BST(5)
+  it('insert and query the tree', function(){
+    bt = new Root(5)
     bt.depth().should.equal(1);
 
     bt.insert(6)

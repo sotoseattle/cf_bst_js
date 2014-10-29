@@ -2,6 +2,8 @@
 
 ## as a JavaScript object
 
+In this implementation a BST is instantiated as a root. A root inherits from BST and only has 3 additional variables that keep track of the size, depth and balance of the whole tree. As we add new values to the tree, each node (bst) keeps a reference to the root and updates its counter. In this manner, size/depth/balance methods are O(1), and only search/insert are O(log n). The drawback is keeping track of the root, which limits potential self-balancing future functionality.
+
 The tree has the following methods:
 
 ### insert(val)
